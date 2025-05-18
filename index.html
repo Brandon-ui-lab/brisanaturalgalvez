@@ -6,21 +6,21 @@
   <title>Brisa Natural</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf2;
+      color: #333;
       margin: 0;
       padding: 0;
-      color: #333;
-      text-align: center;
     }
 
     header {
-      background-color: #70c1b3;
+      background-color: #f28c7f;
       padding: 20px;
+      text-align: center;
     }
 
     header img {
-      height: 80px;
+      max-height: 100px;
     }
 
     h1 {
@@ -28,55 +28,101 @@
     }
 
     p.subtitle {
-      margin-top: 0;
       font-size: 1.2em;
       color: #fff;
     }
 
-    .gallery {
+    .contenido {
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .contenido h2 {
+      color: #e87c57;
+    }
+
+    .contenido p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .galeria {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 20px;
-      gap: 15px;
+      gap: 20px;
+      padding: 30px 10px;
     }
 
-    .gallery img {
-      width: 250px;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
+    .galeria img {
+      width: 240px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
     }
 
-    .gallery img:hover {
+    .galeria img:hover {
       transform: scale(1.05);
     }
 
+    .info-domicilio {
+      background-color: #ffe0d5;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .info-domicilio h2 {
+      color: #c7503e;
+    }
+
+    .info-domicilio p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1em;
+    }
+
     footer {
-      background: #333;
+      background-color: #333;
       color: #fff;
-      padding: 10px;
+      padding: 15px;
+      text-align: center;
       font-size: 0.9em;
     }
   </style>
 </head>
 <body>
 
+  <!-- Encabezado con logo -->
   <header>
-    <img src="logo.png" alt="Logo de Brisa Natural" />
+    <img src="logo.png" alt="Logo de Brisa Natural">
     <h1>Brisa Natural</h1>
-    <p class="subtitle">Disfruta la frescura de lo natural</p>
+    <p class="subtitle">¡Helados naturales que te enamoran!</p>
   </header>
 
-  <section class="gallery">
-    <img src="producto1.jpg" alt="Helado 1" />
-    <img src="producto2.jpg" alt="Helado 2" />
-    <!-- Puedes agregar más imágenes aquí -->
+  <!-- Bienvenida -->
+  <section class="contenido">
+    <h2>Bienvenidos a Brisa Natural</h2>
+    <p>En Brisa Natural, ofrecemos los mejores helados artesanales elaborados con ingredientes frescos, naturales y sin aditivos. Nuestra pasión es brindarte un sabor único que refresque tus días y te llene de alegría. ¡Descubre lo que tenemos preparado para ti!</p>
   </section>
 
+  <!-- Galería de productos -->
+  <section class="galeria">
+    <img src="producto1.jpg" alt="Helado 1">
+    <img src="producto2.jpg" alt="Helado 2">
+    <!-- Puedes agregar más imágenes -->
+  </section>
+
+  <!-- Información de servicio a domicilio -->
+  <section class="info-domicilio">
+    <h2>Servicio a domicilio</h2>
+    <p>¿No puedes salir de casa? ¡No te preocupes! Te llevamos tus helados favoritos hasta tu puerta en zona 10 de Ciudad de Guatemala. Haz tu pedido por nuestras redes sociales o llámanos directamente. ¡La frescura llega a ti!</p>
+  </section>
+
+  <!-- Pie de página -->
   <footer>
-    &copy; 2025 Brisa Natural. Todos los derechos reservados.
+    © 2025 Brisa Natural | Zona 10, Ciudad de Guatemala | contacto@brisanatural.com
   </footer>
 
 </body>
